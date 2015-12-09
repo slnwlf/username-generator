@@ -2,7 +2,10 @@
 # Run `rspec /spec/username_spec.rb` to get started.
 
 def format_name(first, last)
-  nil
+  
+  first.delete(' ')[0].downcase + last.delete(' ').downcase
+  
+  
 end
 
 def format_year
